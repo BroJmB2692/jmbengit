@@ -44,7 +44,7 @@
     h2 {
       font-size: 1.8rem;
       margin-bottom: 1rem;
-      color: #355E3B;
+      color: #228B22;
     }
     h3 {
       margin-top: 2rem;
