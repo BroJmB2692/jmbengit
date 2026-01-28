@@ -95,7 +95,7 @@
 </header>
 
 <section>
-  <h2>What You Get</h2>
+  <h2><strong>What You Get</strong></h2>
   <p>Opinionated, plug-and-play automation designed to save weeks of engineering time.</p>
 
   <div class="card">
