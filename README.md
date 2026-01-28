@@ -32,7 +32,7 @@
     }
     header p {
       font-size: 1.1rem;
-      color: #cbd5f5;
+      color: #000000;
       max-width: 800px;
       margin: 0 auto;
     }
