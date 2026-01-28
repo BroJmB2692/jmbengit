@@ -16,6 +16,10 @@
       background: #0f172a;
       color: #e5e7eb;
       line-height: 1.6;
+      background-image: url("engageitpartners_background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
     header {
       background: linear-gradient(135deg, #1e293b, #020617);
