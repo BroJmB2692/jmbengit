@@ -96,11 +96,9 @@
 
 <section>
   <h2><strong>What You Get</strong></h2>
-  <p style="color: #0000FF;">
-  Opinionated, plug-and-play automation designed to save weeks of engineering time.
-</p>
-  <div class="card">
-    <h3>Ansible / AAP Playbook Bundles</h3>
+    <div class="card">
+     <p style="color: #0000FF;">Opinionated, plug-and-play automation designed to save weeks of engineering time.</p>
+     <h3>Ansible / AAP Playbook Bundles</h3>
     <ul>
       <li>Structured roles & collections</li>
       <li>Inventory-aware logic</li>
