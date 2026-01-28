@@ -86,7 +86,7 @@
 <body>
 
 <header>
-  <h1>My Enterprise Ansible Automation Kits</h1>
+  <h1>Enterprise Ansible Automation Kits</h1>
   <p>Production-ready automation assets for Ansible & Ansible Automation Platform (AAP). Built from real enterprise implementations — not demos.</p>
 </header>
 
