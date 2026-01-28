@@ -96,7 +96,7 @@
 
 <section>
   <h2><strong>What You Get</strong></h2>
-  <p style="color: #000000;">
+  <p style="color: #0000FF;">
   Opinionated, plug-and-play automation designed to save weeks of engineering time.
 </p>
   <div class="card">
