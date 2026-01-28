@@ -96,7 +96,7 @@
 
 <section>
   <h2><strong>What You Get</strong></h2>
-  <p>Opinionated, plug-and-play automation designed to save weeks of engineering time.</p>
+  <p>style="color: #000000;">Opinionated, plug-and-play automation designed to save weeks of engineering time.</p>
 
   <div class="card">
     <h3>Ansible / AAP Playbook Bundles</h3>
