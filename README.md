@@ -23,7 +23,7 @@
     }
     header {
       background: linear-gradient(135deg, #1e293b, #020617);
-      padding: 4rem 2rem;
+      padding: 1rem 2rem;
       text-align: center;
     }
     header h1 {
