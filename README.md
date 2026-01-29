@@ -107,9 +107,7 @@
     </ul>
     <p><strong>Use cases:</strong> OS hardening, agent deployment, time sync, auth, certs, baselines</p>
     <div class="price">$49 – $129</div>
-    <a class="cta" href="https://brattitude87.gumroad.com/l/uevnc">
-  Buy on Gumroad
-</a>
+    <a class="cta" href="https://brattitude87.gumroad.com/l/uevnc">Buy it now!</a>
   </div>
 
   <div class="card">
