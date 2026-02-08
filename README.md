@@ -8,9 +8,6 @@
   <title>Enterprise Ansible Automation Kits</title>
   <style>
     body {
-      <div class="hero">
-      <h1>Welcome to My Site</h1>
-      </div>
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       background: #0f172a;
