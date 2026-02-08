@@ -85,6 +85,24 @@
       color: #94a3b8;
       border-top: 1px solid #1e293b;
     }
+    #chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 380px;
+  height: 520px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  background: white;
+  z-index: 9999;
+}
+
+.chat-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
   </style>
 </head>
 <body>
