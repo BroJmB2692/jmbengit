@@ -94,7 +94,7 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  background: white;
+  background: transparent;
   z-index: 9999;
 }
 
