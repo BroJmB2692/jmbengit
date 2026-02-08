@@ -203,5 +203,9 @@
   <p>Built by someone who actually runs Ansible & AAP in enterprise environments.</p>
 </footer>
 
+<div id="chat-widget">
+  <iframe src="chat/index.html" class="chat-frame"></iframe>
+</div>
+
 </body>
 </html>
