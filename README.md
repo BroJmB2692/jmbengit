@@ -94,7 +94,6 @@
       background: transparent;
       z-index: 9999;
     }
-
     .chat-frame {
       width: 100%;
       height: 100%;
