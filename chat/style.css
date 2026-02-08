@@ -1,5 +1,5 @@
 body {
-  background: #e5e5ea; /* iMessage light gray */
+  background: transparent; /* iMessage light gray */
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   display: flex;
   justify-content: center;
