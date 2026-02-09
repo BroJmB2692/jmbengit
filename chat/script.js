@@ -26,14 +26,14 @@ function addMessage(text, sender) {
   safe = safe.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   safe = safe.replace(/\*(.*?)\*/g, "<em>$1</em>");
 
-  // 4. Bullet lists: "- item"
+  // Bullet lists: "- item"
   safe = safe.replace(/^- (.*)$/gm, "<li>$1</li>");
   safe = safe.replace(/(<li>[\s\S]*?<\/li>)/gm, "<ul>$1</ul>");
 
-  // 5. Numbered lists: "1. item"
-  safe = safe.replace(/^\d+\.\s+(.*)$/gm, "<li>$1</li>");
+  // Numbered lists: "1. Item"
+  safe = safe.replace(/^(\d+)\.\s+(.*)$/gm, "<li><strong>$1.</strong> $2</li>");
   safe = safe.replace(/(<li>[\s\S]*?<\/li>)/gm, "<ol>$1</ol>");
-
+  
   // 6. Paragraphs + line breaks
   safe = safe.replace(/\n{2,}/g, "<br><br>");
   safe = safe.replace(/\n/g, "<br>");
