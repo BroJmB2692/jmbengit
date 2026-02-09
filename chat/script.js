@@ -16,8 +16,8 @@ function addMessage(text, sender) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 
-  // 2. Numbered section headers: remove original "1." then rebuild clean
-  safe = safe.replace(/^(\d+)\.\s+(.*)$/gm, "<h3>$2</h3>");
+  // 2. Convert section titles (a line followed by a blank line and a bullet list)
+  safe = safe.replace(/^(.*)\n\n- /gm, "<h3>$1</h3>\n- ");
 
   // 3. Bold + italics
   safe = safe.replace(/\*\*\*(.*?)\*\*\*/g, "<strong><em>$1</em></strong>");
