@@ -16,26 +16,13 @@ function addMessage(text, sender) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 
-  // 2. Convert section titles (a line followed by a blank line and a bullet list)
-  safe = safe.replace(/^(.*)\n\n- /gm, "<h3>$1</h3>\n- ");
-
-  // 3. Bold + italics
+  // 2. Bold + italics (Markdown-style)
   safe = safe.replace(/\*\*\*(.*?)\*\*\*/g, "<strong><em>$1</em></strong>");
   safe = safe.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   safe = safe.replace(/\*(.*?)\*/g, "<em>$1</em>");
 
-  // 4. Bullet list items: "- item"
-  safe = safe.replace(/^- (.*)$/gm, "<li>$1</li>");
-
-  // 5. Group consecutive <li> into a single <ul>
-  safe = safe.replace(/(<li>[\s\S]*?<\/li>)+/gm, match => {
-    return "<ul>" + match + "</ul>";
-  });
-
-  // 6. Convert double line breaks into paragraph spacing
+  // 3. Line breaks
   safe = safe.replace(/\n{2,}/g, "<br><br>");
-
-  // 7. Convert remaining single line breaks
   safe = safe.replace(/\n/g, "<br>");
 
   bubble.innerHTML = safe;
