@@ -30,9 +30,21 @@ function addMessage(text, sender) {
   safe = safe.replace(/^- (.*)$/gm, "<li>$1</li>");
   safe = safe.replace(/(<li>[\s\S]*?<\/li>)/gm, "<ul>$1</ul>");
 
-  // Numbered lists: "1. Item"
-  safe = safe.replace(/^(\d+)\.\s+(.*)$/gm, "<li><strong>$1.</strong> $2</li>");
-  safe = safe.replace(/(<li>[\s\S]*?<\/li>)/gm, "<ol>$1</ol>");
+// Numbered list items: "1. Item"
+safe = safe.replace(/^(\d+)\.\s+(.*)$/gm, "<li class='num'>$1. $2</li>");
+
+// Bullet list items: "- Item"
+safe = safe.replace(/^- (.*)$/gm, "<li class='bullet'>$1</li>");
+
+// Group consecutive numbered <li> into a single <ol>
+safe = safe.replace(/(<li class='num'>[\s\S]*?<\/li>)+/gm, match => {
+  return "<ol>" + match.replace(/class='num'/g, "") + "</ol>";
+});
+
+// Group consecutive bullet <li> into a single <ul>
+safe = safe.replace(/(<li class='bullet'>[\s\S]*?<\/li>)+/gm, match => {
+  return "<ul>" + match.replace(/class='bullet'/g, "") + "</ul>";
+}); 
   
   // 6. Paragraphs + line breaks
   safe = safe.replace(/\n{2,}/g, "<br><br>");
